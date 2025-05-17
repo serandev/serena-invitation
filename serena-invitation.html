@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>세레나 결혼 축하 파티 초대장</title>
+
+  <!-- 예쁜 글꼴 불러오기 -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+.invitation-title {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Gowun Batang', serif;
+  padding: 110px 20px;
+  color: #787878;
+  font-weight: 800; /* 두껍게 */
+  text-shadow: 1px 1px 1px rgba(209, 124, 124, 0.5); /* 부드러운 그림자 */
+  z-index: 1;
+}
+
+.invitation-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 282px;          /* 높이만 150px로 고정 */
+  background-image: url('https://i.imgur.com/yf2iwIj.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;           /* 투명도 50% */
+  z-index: -1;
+}}
+
+    body {
+      font-family: 'Nanum Myeongjo', serif;
+      font-size: 15px;
+      background-color: #fffdf8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .invitation {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 24px;
+    }
+
+    .invitation img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #d17c7c;
+      margin-bottom: 24px;
+      font-family: 'Gowun Batang', serif;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section h3 {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 8px;
+      font-family: 'Gowun Batang', serif;
+    }
+
+    .section p {
+      margin: 4px 0;
+      line-height: 1.6;
+      font-family: 'Nanum Myeongjo', serif;
+      font-size: 13.5px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #fae100;
+      color: #3c1e1e;
+      font-family: 'Gowun Dodum', sans-serif;
+      padding: 1px 5px;       /* 여백을 조금 줄임 */
+      border-radius: 7px;     /* 작아진 크기에 맞춰 둥글기 축소 */
+      font-size: 0.67em;      /* 이전보다 더 작게 */
+      margin-left: 6px;
+      position: relative;
+      top: -1px;
+    }
+
+    .secondary-info {
+      background-color: #f4f4f4;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .secondary-info h3 {
+      font-size: 16px;
+      margin-top: 0;
+      color: #666;
+      font-family: 'Gowun Batang', serif;
+    }
+
+    .secondary-info p {
+      font-family: 'Nanum Myeongjo', serif;
+      margin: 4px 0;
+      line-height: 1.6;
+    }
+    
+    .timetable-section {
+  margin: 30px 0;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 14px;
+  color: #444;
+  background-color: #fcf9f4;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.gray-bar {
+  height: 2px;
+  background-color: #ddd;
+  margin: 40px 0 12px;
+  border-radius: 2px;
+}
+details summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+.timetable {
+  background: #fff7f7;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 13.5px;
+  font-family: 'Nanum Myeongjo', serif;
+  line-height: 1.6;
+}
+
+.timetable .entry {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.timetable .time {
+  min-width: 100px;
+  font-weight: bold;
+  color: #b47171;
+}
+
+.timetable .desc {
+  flex: 1;
+}
+
+.timetable .entry .subtext {
+  font-size: 12px;
+  color: #555;
+  margin: 2px 0 4px;
+  display: block;
+}
+
+    .contact-info {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-top: 30px;
+      font-family: 'Nanum Myeongjo', serif;
+      user-select: text;  /* 복사 가능하게 */
+    }
+  </style>
+</head>
+<body>
+  <div class="invitation">
+    <div class="invitation-title">
+      세레나<br>
+      결혼 축하 파티에<br>
+      초대합니다
+    </div>
+
+    <div class="section">
+      <h3>📅 날짜 & 시간</h3>
+      <p>날짜: 5월 30일 (금) <span class="badge">카카오 놀금</span></p>
+      <p>시간: 오후 12:00 ~ 14:00</p>
+    </div>
+
+    <div class="section">
+      <h3>📍 장소</h3>
+      <p><strong>✨The Party J✨</strong></p>
+      <p>경기 성남시 분당구 판교로 190-4 1층</p>
+    </div>
+
+    <div class="section">
+      <h3>💰 참가 비용</h3>
+      <p>1인 50,000원</p>
+    </div>
+
+    <div class="section">
+      <h3>🅿️ 주차 이용 안내</h3>
+      <p>석란주차빌딩 주차장 이용</p>
+      <p>최초 10분: 500원</p>
+      <p>추가: 1시간 10분당 500원</p>
+    </div>
+    <div class="gray-bar"></div>
+<details open class="timetable-section">
+  <summary>⏰ Time Table 보기</summary>
+  <div class="timetable">
+    <div class="entry">
+        <span class="time">12:00 ~ 12:10</span>
+        <span class="desc">입장</span>
+    </div>
+    <div class="entry">
+        <span class="time">12:10 ~ 12:30</span>
+        <span class="desc">축하 행사<br>
+            <span class="subtext">결혼 축하 영상</span>
+            <span class="subtext">션 & 세레나 첫 시작 이야기</span>
+            <span class="subtext">케이크 컷팅</span>
+        </span>
+    </div>
+    <div class="entry"><span class="time">12:40 ~ 13:00</span>
+        <span class="desc">신부 Q&A 시간<br>
+            <span class="subtext">결혼에 관련된 소감이나 후기를 물어보고 답하는 시간</span>
+        </span>
+    </div>
+    <div class="entry">
+        <span class="time">13:00 ~ 13:20</span>
+        <span class="desc">퀴즈 타임<br>
+            <span class="subtext">신부에 대한 퀴즈를 맞추는 분에게 가벼운 경품증정</span>
+        </span>
+    </div>
+    <div class="entry">
+        <span class="time">13:20 ~ 13:30</span>
+        <span class="desc">사진 촬영</span>
+    </div>
+    <div class="entry"><span class="time">13:30 ~ 14:00</span>
+        <span class="desc">식사</span>
+    </div>
+  </div>
+</details>
+    <div class="section secondary-info">
+      <h3>🎉 2차 뒤풀이 안내</h3>
+      <p>뒤풀이 참석 시 별도 비용이 각출됩니다.</p>
+      <p>뒤풀이 장소는 주차 이용이 어렵습니다. 이 점 참고 바랍니다.</p>
+    </div>
+    <div class="contact-info">
+      문의사항: julia.kk (010-5138-3918)
+    </div>
+  </div>
+</body>
+</html>
